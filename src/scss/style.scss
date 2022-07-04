@@ -2,7 +2,7 @@
 @import "vars";
 @import "fonts";
 @import "global";
-
+@import "swiper";
 .header{
     .nav {
         padding-top: 32px;
@@ -350,6 +350,160 @@
     }
 }
 
+.price{
+    margin: 40px 0;
+    &__item{
+        flex: 0 1 50%;
+    }
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__inner-right{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: url('@img/price.png') center / cover;
+        height: 100%;
+        padding: 300px 0 280px;
+    }
+    &__coast{
+        font-weight: 700;
+        font-size: 120px;
+        line-height: 80%;
+        margin-bottom: 16px;
+    }
+    &__month{
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 180%;
+        margin-left: -100px;
+    }
+    &__title{
+        font-weight: 700;
+        font-size: 50px;
+        line-height: 110%;
+        margin-bottom: 40px;
+        span{
+            color: $rose;
+        }
+    }
+    &__list{
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-bottom: 48px;
+    }
+    &__list-item{
+        background: #FFF1EF;
+        border: 1px solid #FFD1CA;
+        border-radius: 24px;
+        padding: 8px 20px;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 180%;
+        color: #FF8B7A;
+        &--yellow{
+            color: #FFAC2F;
+            background: #FFF8EE;
+        }
+        &--green{
+            color: #3ACD77;
+            background: #ECFFF4;
+        }
+        &--blue{
+            color: #2BC0CA;
+            background: #F1FEFF;
+        }
+        &--violet{
+            color: #C140FD;
+            background: #FCF5FF;
+        }
+    }
+    .btn__price{
+        background: #F0998D;
+        box-shadow: 0px 16px 40px rgba(255, 188, 166, 0.33);
+        border-radius: 15px;
+        padding: 20px 45px;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 27px;
+    }
+}
+
+.reviews__swiper-box{
+    position: relative;
+    .prevBtn,
+    .nextBtn{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border: 1px solid #B8BCC1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        transition: all .3s;
+        &:hover{
+            border-color: $black;
+        }
+    }
+
+    .prevBtn{
+        position: absolute;
+        left: 0;
+        top: 45%;
+    }
+    .nextBtn{
+        position: absolute;
+        right: 0;
+        transform: rotate(180deg);
+        top: 45%;
+    }
+}
+
+
+
+.reviews{
+  
+    &__swiper{
+        padding: 130px 0;
+        max-width: 900px;
+    }
+    &__item{
+        display: flex;
+        align-items: center;
+    }
+    &__avatar{
+        position: relative;
+        &::after{
+            position: absolute;
+            content: "";
+            bottom: 45px;
+            right: 60px;
+            background-image: url(../img/play.svg);
+            width: 90px;
+            height: 90px;
+        }
+    }
+    &__text{
+        max-width: 600px;
+        font-size: 18px;
+        line-height: 180%;
+        color: #1D2736;
+        margin-bottom: 16px;
+    }
+    &__title{
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 180%;
+        margin-bottom: 24px;
+    }
+}
 
 
 
