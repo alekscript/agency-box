@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/style.min.css?_v=20220704093635">
     <title>Document</title>
 </head>
 <body>
@@ -72,7 +72,7 @@
                     <img src="img/brands/brand_3.svg" alt="brand" class="header__brands-item">
                 </div>
             </div>
-            <img src="img/header.png" alt="header-bg" class="header__img">
+            <picture><source srcset="img/header.webp" type="image/webp"><img src="img/header.png" alt="header-bg" class="header__img"></picture>
         </div>
     </div>
 </div>
@@ -80,7 +80,7 @@
 
     <main class="main">
         <section class="work">
-    <div class="container--big">
+    <div class="container--big container--rose">
         <div class="container">
             <div class="work__inner">
                 <div class="tabs">
@@ -116,7 +116,7 @@
                                     <button class="btn btn__tabs">Sign up</button>
                                 </div>
                                 <div class="tabs__content-item__right">
-                                    <img src="img/tabs/1.png" alt="#" class="tabs__img">
+                                    <picture><source srcset="img/tabs/1.webp" type="image/webp"><img src="img/tabs/1.png" alt="#" class="tabs__img"></picture>
                                 </div>
                             </div>
                         </div>
@@ -143,7 +143,7 @@
                                     <button class="btn btn__tabs">Sign up</button>
                                 </div>
                                 <div class="tabs__content-item__right">
-                                    <img src="img/tabs/2.png" alt="#" class="tabs__img">
+                                    <picture><source srcset="img/tabs/2.webp" type="image/webp"><img src="img/tabs/2.png" alt="#" class="tabs__img"></picture>
                                 </div>
                             </div>
                         </div>
@@ -170,7 +170,7 @@
                                     <button class="btn btn__tabs">Sign up</button>
                                 </div>
                                 <div class="tabs__content-item__right">
-                                    <img src="img/tabs/3.png" alt="#" class="tabs__img">
+                                    <picture><source srcset="img/tabs/3.webp" type="image/webp"><img src="img/tabs/3.png" alt="#" class="tabs__img"></picture>
                                 </div>
                             </div>
                         </div>
@@ -197,7 +197,7 @@
                                     <button class="btn btn__tabs">Sign up</button>
                                 </div>
                                 <div class="tabs__content-item__right">
-                                    <img src="img/tabs/4.png" alt="#" class="tabs__img">
+                                    <picture><source srcset="img/tabs/4.webp" type="image/webp"><img src="img/tabs/4.png" alt="#" class="tabs__img"></picture>
                                 </div>
                             </div>
                         </div>
@@ -223,7 +223,7 @@
                                     <button class="btn btn__tabs">Sign up</button>
                                 </div>
                                 <div class="tabs__content-item__right">
-                                    <img src="img/tabs/5.png" alt="#" class="tabs__img">
+                                    <picture><source srcset="img/tabs/5.webp" type="image/webp"><img src="img/tabs/5.png" alt="#" class="tabs__img"></picture>
                                 </div>
                             </div>
                         </div>
@@ -269,14 +269,99 @@
         </div>
     </div>
 </section>
+        <section class="price">
+        <div class="container">
+            <div class="price__inner">
+                <div class="price__inner-left price__item">
+                    <h3 class="title price__title">
+                        one simple  <span>pricing.</span>
+                    </h3>
+                    <ul class="price__list">
+                        <li class="price__list-item">Unlimited features</li>
+                        <li class="price__list-item price__list-item--yellow">Unlimited members</li>
+                        <li class="price__list-item price__list-item--green">Unlimited workflows</li>
+                        <li class="price__list-item price__list-item--blue">Unlimited calendars</li>
+                        <li class="price__list-item price__list-item--violet">Unlimited meeting</li>
+                    </ul>
+                    <button class="btn btn__price">Sign up</button>
+                </div>
+                <div class="price__inner-right price__item">
+                    <div class="price__coast">49€</div>
+                    <div class="price__month">/ client / month</div>
+                </div>
+            </div>
+        </div>
+</section>
+        <section class="reviews">
+    <div class="container--big container--purple">
+        <div class="container">
+            <div class="reviews__swiper-box">
+                <div class="navBtns">
+                    <div class="prevBtn"><img src="img/arrow.svg" alt="arrow"></div>
+                    <div class="nextBtn"><img src="img/arrow.svg" alt="arrow"></div>
+                </div>
+            <!-- Slider main container -->
+            <div class="swiper reviews__swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper reviews__wrapper">
+                    <!-- Slides -->
+                     <!-- If we need navigation buttons -->
+                    
+                    <div class="swiper-slide reviews__item">
+                        <div class="reviews__avatar">
+                            <picture><source srcset="img/avatar.webp" type="image/webp"><img class="reviews__avatar-img" src="img/avatar.png" alt="avatar"></picture>
+                        </div>
+                        <div class="reviews__inner">
+                            <h5 class="reviews__title">
+                                Christophe Bourand, ChrisWebMarketing
+                            </h5>
+                            <p class="reviews__text">
+                                Juggling with all my clients and making sure everything was done correctly took me a lot of energy. Not did Snikpic enabled me to tremendously release that extra useless work, but I quickly found myself able to take on much more clients than I originally could 
+                            </p>
+                            <img class="reviews__icon" src="img/web_icon.svg" alt="web marketing">
+                        </div>
+                    </div>
+                    <div class="swiper-slide reviews__item">
+                        <div class="reviews__avatar">
+                            <picture><source srcset="img/avatar.webp" type="image/webp"><img class="reviews__avatar-img" src="img/avatar.png" alt="avatar"></picture>
+                        </div>
+                        <div class="reviews__inner">
+                            <h5 class="reviews__title">
+                                Christophe Bourand, ChrisWebMarketing
+                            </h5>
+                            <p class="reviews__text">
+                                Juggling with all my clients and making sure everything was done correctly took me a lot of energy. Not did Snikpic enabled me to tremendously release that extra useless work, but I quickly found myself able to take on much more clients than I originally could 
+                            </p>
+                            <img class="reviews__icon" src="img/web_icon.svg" alt="web marketing">
+                        </div>
+                    </div>
+                    <div class="swiper-slide reviews__item">
+                        <div class="reviews__avatar">
+                            <picture><source srcset="img/avatar.webp" type="image/webp"><img class="reviews__avatar-img" src="img/avatar.png" alt="avatar"></picture>
+                        </div>
+                        <div class="reviews__inner">
+                            <h5 class="reviews__title">
+                                Christophe Bourand, ChrisWebMarketing
+                            </h5>
+                            <p class="reviews__text">
+                                Juggling with all my clients and making sure everything was done correctly took me a lot of energy. Not did Snikpic enabled me to tremendously release that extra useless work, but I quickly found myself able to take on much more clients than I originally could 
+                            </p>
+                            <img class="reviews__icon" src="img/web_icon.svg" alt="web marketing">
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
     </main>
     
     <footer class="footer">
-        "FOOTER BLOCK"
     </footer>
 
 
 
-<script src="js/app.min.js"></script>
+<script src="js/app.min.js?_v=20220704093635"></script>
 </body>
 </html>

@@ -2,6 +2,8 @@ import * as flsFunctions from "./modules/testWebP.js";
 
 flsFunctions.isWebp();
 
+import Swiper from 'swiper/bundle';
+
 function burgerMenu() {
     const burger = document.querySelector('.burger')
     const menu = document.querySelector('.menu')
@@ -188,6 +190,27 @@ function tabs(headerSelector, tabSelector, contentSelector, activeClass, display
 // ЧЕТВЕРТЫЙ аргумент - класс активности, который будет добавлятся для таба, который сейчас активен.
 tabs( '.tabs__header' ,'.tabs__header-item', '.tabs__content-item', 'active')
 
-
+const swiper = new Swiper('.swiper', {
+    slidesPerView: 1,
+    spaceBetween: 60,
+    loop: true,
+    navigation: {
+        nextEl: '.nextBtn',
+        prevEl: '.prevBtn',
+      },
+      breakpoints: {
+        // mobile + tablet - 320-990
+        320: {
+          slidesPerView: 1
+        },
+        // desktop >= 991
+        768: {
+          slidesPerView: 1
+        },
+        993: {
+            slidesPerView: 1
+          }
+      }
+  });
 
 
