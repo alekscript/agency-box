@@ -4,6 +4,30 @@ flsFunctions.isWebp();
 
 import Swiper from 'swiper/bundle';
 
+const anchors = document.querySelectorAll('.menu__item a[href*="#"]')
+
+for (let anchor of anchors) {
+anchor.addEventListener('click', function (e) {
+    e.preventDefault()
+    
+    const blockID = anchor.getAttribute('href').substr(1)
+    const burger = document.querySelector('.burger')
+    const menu = document.querySelector('.menu')
+    const body = document.querySelector('body')
+    const navBtn = document.querySelector('.btn__sign')
+    
+    menu.classList.remove('active')
+    navBtn.classList.remove('active')
+    burger.classList.remove('active-burger')
+    body.classList.remove('locked')
+
+    document.getElementById(blockID).scrollIntoView({
+    behavior: 'smooth',
+    block: 'start'
+    })
+})
+}
+
 function burgerMenu() {
     const burger = document.querySelector('.burger')
     const menu = document.querySelector('.menu')
@@ -23,15 +47,9 @@ function burgerMenu() {
             body.classList.remove('locked')
         }
     })
-      // Вот тут мы ставим брейкпоинт навбара
-  window.addEventListener('resize', () => {
-    if (window.innerWidth > 991.98) {
-      menu.classList.remove('active')
-      burger.classList.remove('active-burger')
-      navBtn.classList.remove('active')
-      body.classList.remove('locked')
-    }
-  })
+
+
+
 }
 burgerMenu()
 
